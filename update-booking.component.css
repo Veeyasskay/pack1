@@ -1,0 +1,23 @@
+button:disabled {
+    cursor: not-allowed;
+}
+
+.btn-outline-warning {
+    margin-left: 100px;
+}
+
+label {
+    font-size: large;
+    font-family: cursive;
+    font-style: italic;
+}
+
+h3 {
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+}
+
+.card-header{
+    background-color: white;
+}

@@ -1,0 +1,28 @@
+<div class="row mt-3">
+    <div class="col-md-11">
+        <div class="card shadow">
+            <div class="card-body">
+                <form class="form-inline">
+                    <div class="form-group mb-2">
+                        <label for="customerId">Customer Id</label>
+                        <input type="text" [(ngModel)]="customerId" name="customerId" placeholder="CustomerId"
+                            class="form-control" id="customerId">
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="flightId">Flight Id</label>
+                        <input type="flightId" [(ngModel)]="flightId" name="flightId" class="form-control" id="flightId"
+                            placeholder="FlightId">
+                    </div>
+                    <button type="submit" id="applyFilter" class="btn btn-outline-success mb-2" (click)="sendFiltersData()">
+                        Apply Filter
+                    </button>
+                    <button type="reset" id="reset" class="btn btn-outline-danger mb-2 ml-3" (click)="resetFilters()">
+                        Reset
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <h3>Apply CustomerId and FlightId filters</h3> -->

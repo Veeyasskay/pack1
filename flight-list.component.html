@@ -1,0 +1,24 @@
+<h2 class="textStyle">Welcome to Infy Airlines</h2>
+<div class="row" *ngIf="flightsArray?.length">
+    <div class="col-md-3 mt-3" id="flightCard" *ngFor="let flight of flightsArray">
+        <div class="card shadow" style="opacity: 0.8;">
+            <img id="flightImage" src="../../assets/{{flight.flightImage}}" height="200px" class="card-img-top"
+                alt="{{flight.flightId}}">
+            <div class="card-body text text-center">
+                <h5 id="cardTitle">{{flight.AircraftName }} | {{ flight.flightId}}</h5>
+                <div class="cardData">
+                    <h6 id="fare">Fare: {{flight.fare | currency:'INR'}}</h6>
+                    <h6 id="availableSeats">Available Seats: {{flight.availableSeats}}</h6>
+                </div>
+                <button class="btn btn-outline-dark btn-sm" id="bookFlight"
+                    [disabled]="flight.status == 'Cancelled' || flight.availableSeats<=0"
+                    (click)="sendFlightData(flight)">Book Flight</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="!flightsArray?.length">
+    <h1 class="text text-center" id="errorMessage">
+        {{errorMessage}}
+    </h1>
+</div>

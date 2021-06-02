@@ -1,0 +1,25 @@
+.card-body {
+    background-color: rgba(132, 199, 93, 0.5);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    opacity: 0.8;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+h3 {
+    font-style: italic;
+    font-family: cursive;
+    color: rgb(104, 78, 43);
+}
+
+table {
+    font-family: cursive;
+    color: rgb(104, 78, 43);
+}
+
+thead {
+    font-size: large;
+}

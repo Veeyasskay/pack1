@@ -1,0 +1,13 @@
+<app-booking-filters (filtersEmitter)="receiveFiltersData($event)"></app-booking-filters>
+
+<h5 class="text text-center mt-4 mb-4">
+    <span id="successMessage" *ngIf="successMessage" class="alert alert-success">
+        {{successMessage}}
+    </span>
+    <span id="errorMessage" *ngIf="errorMessage" class="alert alert-danger">
+        {{errorMessage}}
+    </span>
+</h5>
+
+<app-booking-details (bookingEmitter)="cancelBooking($event)"
+    [bookingsArray]="bookingsArray|bookingFilter:customerId:flightId"></app-booking-details>

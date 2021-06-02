@@ -1,0 +1,32 @@
+.card {
+    opacity: 0.8;
+    font-family: cursive;
+}
+
+.card-img-top {
+    padding: 10px;
+}
+
+.card:hover {
+    box-shadow: 0px 10px 10px 5px rgba(38, 41, 40, 0.25);
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+.customImage {
+    /* width: 300px; */
+    /* height: 300px; */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.customImage img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.customImage:hover img {
+    transform: scale(1.1);
+}

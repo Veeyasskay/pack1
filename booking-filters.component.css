@@ -1,0 +1,26 @@
+.card-body {
+    background-color: rgba(132, 199, 93, 0.5);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    opacity: 0.8;
+}
+
+label {
+    font-family: cursive;
+    font-style: italic;
+    font-size: large;
+    color: rgb(104, 78, 43);
+    margin-right: 10px;
+}
+
+form {
+    margin-left: 150px;
+}
+
+h3 {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 22px;
+    color: antiquewhite;
+    margin-right: 10px;
+}
